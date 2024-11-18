@@ -1,0 +1,296 @@
+[
+  {
+    "objectID": "Doosan Bobcat/index.html",
+    "href": "Doosan Bobcat/index.html",
+    "title": "Doosan Bobcat",
+    "section": "",
+    "text": "Role: Autonomous Systems Engineer.\nTechnical Skills: Matlab, C++, Root Cause Analysis, Python, PID Control, Dubins Algorithm, State Space Representations, Control Gain Tuning, Radars.\nSoft Skills: Leadership, Teamwork, Communication, Technical Communication, Time Management, Technical Presentation, Understanding Consumer Needs, Consulting, Conflict Resolution."
+  },
+  {
+    "objectID": "Doosan Bobcat/index.html#key-skills-acquiredhoned",
+    "href": "Doosan Bobcat/index.html#key-skills-acquiredhoned",
+    "title": "Doosan Bobcat",
+    "section": "",
+    "text": "Role: Autonomous Systems Engineer.\nTechnical Skills: Matlab, C++, Root Cause Analysis, Python, PID Control, Dubins Algorithm, State Space Representations, Control Gain Tuning, Radars.\nSoft Skills: Leadership, Teamwork, Communication, Technical Communication, Time Management, Technical Presentation, Understanding Consumer Needs, Consulting, Conflict Resolution."
+  },
+  {
+    "objectID": "Doosan Bobcat/index.html#final-poster",
+    "href": "Doosan Bobcat/index.html#final-poster",
+    "title": "Doosan Bobcat",
+    "section": "Final Poster",
+    "text": "Final Poster"
+  },
+  {
+    "objectID": "Doosan Bobcat/index.html#doosan-bobcat-final-report",
+    "href": "Doosan Bobcat/index.html#doosan-bobcat-final-report",
+    "title": "Doosan Bobcat",
+    "section": "Doosan Bobcat Final Report",
+    "text": "Doosan Bobcat Final Report\n\nThis browser does not support PDFs. Please download the PDF to view it: &lt;a href=\"./BobcatFR.pdf\"&gt;Download PDF&lt;/a&gt;"
+  },
+  {
+    "objectID": "Doosan Bobcat/index.html#doosan-bobcat-final-presentation",
+    "href": "Doosan Bobcat/index.html#doosan-bobcat-final-presentation",
+    "title": "Doosan Bobcat",
+    "section": "Doosan Bobcat Final Presentation",
+    "text": "Doosan Bobcat Final Presentation"
+  },
+  {
+    "objectID": "Amazon Prime Air/index.html",
+    "href": "Amazon Prime Air/index.html",
+    "title": "Amazon Prime Air",
+    "section": "",
+    "text": "Role: Team Lead and Navigation Engineer.\nTechnical Skills: Root Cause Analysis, Familiarity with FAA Regulations, Understanding Global Regulations, Terminal, GPS, Linux/Ubuntu, UWB, mmWave, Computer Vision, Intel RealSense Cameras, PID Control, Camera Calibration, Matlab, ROS, SDK, Trade Study, Literature Review, Serial Monitor, Documentation Review.\nSoft Skills: Stakeholder Management, Leadership, Teamwork, Communication, Technical Documentation, Technical Communication, Time Management, Technical Presentation, Conflict Resolution."
+  },
+  {
+    "objectID": "Amazon Prime Air/index.html#key-skills-acquiredhoned",
+    "href": "Amazon Prime Air/index.html#key-skills-acquiredhoned",
+    "title": "Amazon Prime Air",
+    "section": "",
+    "text": "Role: Team Lead and Navigation Engineer.\nTechnical Skills: Root Cause Analysis, Familiarity with FAA Regulations, Understanding Global Regulations, Terminal, GPS, Linux/Ubuntu, UWB, mmWave, Computer Vision, Intel RealSense Cameras, PID Control, Camera Calibration, Matlab, ROS, SDK, Trade Study, Literature Review, Serial Monitor, Documentation Review.\nSoft Skills: Stakeholder Management, Leadership, Teamwork, Communication, Technical Documentation, Technical Communication, Time Management, Technical Presentation, Conflict Resolution."
+  },
+  {
+    "objectID": "Amazon Prime Air/index.html#tag-detection-code",
+    "href": "Amazon Prime Air/index.html#tag-detection-code",
+    "title": "Amazon Prime Air",
+    "section": "Tag Detection Code",
+    "text": "Tag Detection Code\nimport apriltag\nimport argparse\nimport cv2\n\n# construct the argument parser and parse the arguments\nap = argparse.ArgumentParser()\nap.add_argument(\"-i\", \"--image\", required=True,\n    help=\"path to input image containing AprilTag\")\nargs = vars(ap.parse_args())\n\n# load the input image and convert it to grayscale\nprint(\"[INFO] loading image...\")\nimage = cv2.imread(args[\"image\"])\ngray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)\n\n# define the AprilTags detector options and then detect the AprilTags\n# in the input image\nprint(\"[INFO] detecting AprilTags...\")\noptions = apriltag.DetectorOptions(families=\"tag16h5\")\ndetector = apriltag.Detector(options)\nresults = detector.detect(gray)\nprint(\"[INFO] {} total AprilTags detected\".format(len(results)))\n\n\n# loop over the AprilTag detection results\nfor r in results:\n    # extract the bounding box (x, y)-coordinates for the AprilTag\n    # and convert each of the (x, y)-coordinate pairs to integers\n    (ptA, ptB, ptC, ptD) = r.corners\n    ptB = (int(ptB[0]), int(ptB[1]))\n    ptC = (int(ptC[0]), int(ptC[1]))\n    ptD = (int(ptD[0]), int(ptD[1]))\n    ptA = (int(ptA[0]), int(ptA[1]))\n    # draw the bounding box of the AprilTag detection\n    cv2.line(image, ptA, ptB, (0, 255, 0), 2)\n    cv2.line(image, ptB, ptC, (0, 255, 0), 2)\n    cv2.line(image, ptC, ptD, (0, 255, 0), 2)\n    cv2.line(image, ptD, ptA, (0, 255, 0), 2)\n    # draw the center (x, y)-coordinates of the AprilTag\n    (cX, cY) = (int(r.center[0]), int(r.center[1]))\n    cv2.circle(image, (cX, cY), 5, (0, 0, 255), -1)\n    # draw the tag family on the image\n    tagFamily = r.tag_family.decode(\"utf-8\")\n    cv2.putText(image, tagFamily, (ptA[0], ptA[1] - 15),\n        cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)\n    print(\"[INFO] tag family: {}\".format(tagFamily))\n# show the output image after AprilTag detection\ncv2.imshow(\"Image\", image)\ncv2.waitKey(0)"
+  },
+  {
+    "objectID": "Amazon Prime Air/index.html#prime-air-design-review-1",
+    "href": "Amazon Prime Air/index.html#prime-air-design-review-1",
+    "title": "Amazon Prime Air",
+    "section": "Prime Air Design Review 1",
+    "text": "Prime Air Design Review 1"
+  },
+  {
+    "objectID": "Amazon Prime Air/index.html#prime-air-design-review-2",
+    "href": "Amazon Prime Air/index.html#prime-air-design-review-2",
+    "title": "Amazon Prime Air",
+    "section": "Prime Air Design Review 2",
+    "text": "Prime Air Design Review 2"
+  },
+  {
+    "objectID": "Amazon Prime Air/index.html#prime-air-design-review-3",
+    "href": "Amazon Prime Air/index.html#prime-air-design-review-3",
+    "title": "Amazon Prime Air",
+    "section": "Prime Air Design Review 3",
+    "text": "Prime Air Design Review 3"
+  },
+  {
+    "objectID": "Amazon Prime Air/index.html#metrics-selection-against-sensors",
+    "href": "Amazon Prime Air/index.html#metrics-selection-against-sensors",
+    "title": "Amazon Prime Air",
+    "section": "Metrics Selection Against Sensors",
+    "text": "Metrics Selection Against Sensors"
+  },
+  {
+    "objectID": "Visa/index.html",
+    "href": "Visa/index.html",
+    "title": "Visa",
+    "section": "",
+    "text": "Role: Technical Product Manager Intern.\nTechnical Skills: Agile, Scrum, Kubernetes, Python, Estimation, Large Budget Management, Large Scale Infrastructure Management.\nSoft Skills: Stakeholder Management, Listening, Leadership, Communication, Technical Communication, Time Management, Stress Management, Conflict Resolution.\nTo make the most of my internship at Visa, I knew that I had to be proactive. I actively sought out resources in the form of my weekly meetings with my manager, daily meetings with my buddy and lots of time spent on the intranet to try and get up to speed as quickly as possible. Once I was onboarded, I met with various different teams with my buddy and learnt a lot about the ins and out of large scale infrastructure management. Soon, I was trusted to manage 133 servers and a budget of $700,000. In addition to this I was asked to pitch the product in front of a large scale department meeting ## Team Dinner"
+  },
+  {
+    "objectID": "Visa/index.html#key-skills-acquiredhoned",
+    "href": "Visa/index.html#key-skills-acquiredhoned",
+    "title": "Visa",
+    "section": "",
+    "text": "Role: Technical Product Manager Intern.\nTechnical Skills: Agile, Scrum, Kubernetes, Python, Estimation, Large Budget Management, Large Scale Infrastructure Management.\nSoft Skills: Stakeholder Management, Listening, Leadership, Communication, Technical Communication, Time Management, Stress Management, Conflict Resolution.\nTo make the most of my internship at Visa, I knew that I had to be proactive. I actively sought out resources in the form of my weekly meetings with my manager, daily meetings with my buddy and lots of time spent on the intranet to try and get up to speed as quickly as possible. Once I was onboarded, I met with various different teams with my buddy and learnt a lot about the ins and out of large scale infrastructure management. Soon, I was trusted to manage 133 servers and a budget of $700,000. In addition to this I was asked to pitch the product in front of a large scale department meeting ## Team Dinner"
+  },
+  {
+    "objectID": "Resume/index.html",
+    "href": "Resume/index.html",
+    "title": "Check out my Resume!",
+    "section": "",
+    "text": "Your browser does not support PDFs. Please download the resume to view it: &lt;a href=\"./Garg, Nandini - Resume.pdf\"&gt;Download Resume&lt;/a&gt;"
+  },
+  {
+    "objectID": "Resume/index.html#resume",
+    "href": "Resume/index.html#resume",
+    "title": "Check out my Resume!",
+    "section": "",
+    "text": "Your browser does not support PDFs. Please download the resume to view it: &lt;a href=\"./Garg, Nandini - Resume.pdf\"&gt;Download Resume&lt;/a&gt;"
+  },
+  {
+    "objectID": "Academic Work/index.html",
+    "href": "Academic Work/index.html",
+    "title": "Education @ HMC",
+    "section": "",
+    "text": "The General Engineering Program at Harvey Mudd College stands out for its interdisciplinary approach, blending mechanical, electrical, and systems engineering with a strong foundation in liberal arts and sciences. Students gain technical expertise and hands-on experience through project-based learning, cutting-edge labs, and the renowned Clinic Program, where they solve real-world problems with industry partners. Emphasizing ethical innovation and societal impact, the program prepares well-rounded engineers equipped to tackle complex challenges across industries. With its rigorous curriculum, collaborative learning environment, and strong alumni network, HMC’s program produces technically proficient, socially conscious leaders ready to excel in a dynamic world.\n\n\n\nIn some of my completed courses, I worked on some challenging, interesting, and fun final projects. Information about each final project can be found below, and the final report for each project is linked.\nInverted Pendulum Control System: A partner and I developed a full-state feedback control system that stabilized an inverted pendulum on a cart as it moved 1 meter in under 10 seconds.\n\nMore information can be found here.\n\nDriveshaft Analysis of a Formula SAE RaceCar: I conducted a material analysis of a driveshaft used on Formula SAE vehicles.\n\nMore information can be found here.\n\nUnderwater Submarine: A team of 3 students and I developed a underwater submarine whose objective was to determine the change in salinity of water at Dana Point due to climate change.\n\nMore information about the presentation can be found here.\n\n\nMore information about the final report can be found here.\n\n\n\n\nCheck out the course descriptions here: Engineering Curriculum @ HMC\n\n\n\n\n\n\n\n\nRelevant Courses I’ve Taken\n@ HMC\n\n\n\n\nSemiconductors\nRadio Frequency Circuit Design\n\n\nSystem-on-Chip Design\nElec & Magnetic Circuits/Devices\n\n\nDigital Electronics and Computer Engineering\nSystem-on-Chip Design\n\n\nAdvanced Systems Engineering\nMaterials Engineering\n\n\nEngineering Systems\nManagement of Technical Enterprise\n\n\nEngineering Design and Invention\nIntroduction to Engineering Design and Manufacturing\n\n\nDifferential Equations\nLinear Algebra\n\n\nMechanics and Wave Motion\nDiscrete Mathematics"
+  },
+  {
+    "objectID": "Academic Work/index.html#general-engineering-at-hmc",
+    "href": "Academic Work/index.html#general-engineering-at-hmc",
+    "title": "Education @ HMC",
+    "section": "",
+    "text": "The General Engineering Program at Harvey Mudd College stands out for its interdisciplinary approach, blending mechanical, electrical, and systems engineering with a strong foundation in liberal arts and sciences. Students gain technical expertise and hands-on experience through project-based learning, cutting-edge labs, and the renowned Clinic Program, where they solve real-world problems with industry partners. Emphasizing ethical innovation and societal impact, the program prepares well-rounded engineers equipped to tackle complex challenges across industries. With its rigorous curriculum, collaborative learning environment, and strong alumni network, HMC’s program produces technically proficient, socially conscious leaders ready to excel in a dynamic world.\n\n\n\nIn some of my completed courses, I worked on some challenging, interesting, and fun final projects. Information about each final project can be found below, and the final report for each project is linked.\nInverted Pendulum Control System: A partner and I developed a full-state feedback control system that stabilized an inverted pendulum on a cart as it moved 1 meter in under 10 seconds.\n\nMore information can be found here.\n\nDriveshaft Analysis of a Formula SAE RaceCar: I conducted a material analysis of a driveshaft used on Formula SAE vehicles.\n\nMore information can be found here.\n\nUnderwater Submarine: A team of 3 students and I developed a underwater submarine whose objective was to determine the change in salinity of water at Dana Point due to climate change.\n\nMore information about the presentation can be found here.\n\n\nMore information about the final report can be found here.\n\n\n\n\nCheck out the course descriptions here: Engineering Curriculum @ HMC\n\n\n\n\n\n\n\n\nRelevant Courses I’ve Taken\n@ HMC\n\n\n\n\nSemiconductors\nRadio Frequency Circuit Design\n\n\nSystem-on-Chip Design\nElec & Magnetic Circuits/Devices\n\n\nDigital Electronics and Computer Engineering\nSystem-on-Chip Design\n\n\nAdvanced Systems Engineering\nMaterials Engineering\n\n\nEngineering Systems\nManagement of Technical Enterprise\n\n\nEngineering Design and Invention\nIntroduction to Engineering Design and Manufacturing\n\n\nDifferential Equations\nLinear Algebra\n\n\nMechanics and Wave Motion\nDiscrete Mathematics"
+  },
+  {
+    "objectID": "Academic Work/index.html#notable-work",
+    "href": "Academic Work/index.html#notable-work",
+    "title": "Education @ HMC",
+    "section": "",
+    "text": "In some of my completed courses, I worked on some challenging, interesting, and fun final projects. Information about each final project can be found below, and the final report for each project is linked.\nInverted Pendulum Control System: A partner and I developed a full-state feedback control system that stabilized an inverted pendulum on a cart as it moved 1 meter in under 10 seconds.\n\nMore information can be found here.\n\nDriveshaft Analysis of a Formula SAE RaceCar: I conducted a material analysis of a driveshaft used on Formula SAE vehicles.\n\nMore information can be found here.\n\nUnderwater Submarine: A team of 3 students and I developed a underwater submarine whose objective was to determine the change in salinity of water at Dana Point due to climate change.\n\nMore information about the presentation can be found here.\n\n\nMore information about the final report can be found here."
+  },
+  {
+    "objectID": "Academic Work/index.html#relevant-courses-ive-taken",
+    "href": "Academic Work/index.html#relevant-courses-ive-taken",
+    "title": "Education @ HMC",
+    "section": "",
+    "text": "Check out the course descriptions here: Engineering Curriculum @ HMC\n\n\n\n\n\n\n\n\nRelevant Courses I’ve Taken\n@ HMC\n\n\n\n\nSemiconductors\nRadio Frequency Circuit Design\n\n\nSystem-on-Chip Design\nElec & Magnetic Circuits/Devices\n\n\nDigital Electronics and Computer Engineering\nSystem-on-Chip Design\n\n\nAdvanced Systems Engineering\nMaterials Engineering\n\n\nEngineering Systems\nManagement of Technical Enterprise\n\n\nEngineering Design and Invention\nIntroduction to Engineering Design and Manufacturing\n\n\nDifferential Equations\nLinear Algebra\n\n\nMechanics and Wave Motion\nDiscrete Mathematics"
+  },
+  {
+    "objectID": "Audio Technica/index.html",
+    "href": "Audio Technica/index.html",
+    "title": "Audio Technica",
+    "section": "",
+    "text": "Technical Skills: Root Cause Analysis, Read Electrical Technical Drawings, Altium Designer, Design Cycle, Stress Testing, Edge Case Testing, Falstad Simulation, FLIR Infrared Camera, Morph Chart, Best of Class Chart, Functions, Objectives and Constraints, Spectrum Analyzer, Signal Generators, Power Amplifiers, Oscilloscopes.\nSoft Skills: Stakeholder Management, Teamwork, Communication, Technical Communication, Time Management, Technical Presentation."
+  },
+  {
+    "objectID": "Audio Technica/index.html#key-skills-acquiredhoned",
+    "href": "Audio Technica/index.html#key-skills-acquiredhoned",
+    "title": "Audio Technica",
+    "section": "",
+    "text": "Technical Skills: Root Cause Analysis, Read Electrical Technical Drawings, Altium Designer, Design Cycle, Stress Testing, Edge Case Testing, Falstad Simulation, FLIR Infrared Camera, Morph Chart, Best of Class Chart, Functions, Objectives and Constraints, Spectrum Analyzer, Signal Generators, Power Amplifiers, Oscilloscopes.\nSoft Skills: Stakeholder Management, Teamwork, Communication, Technical Communication, Time Management, Technical Presentation."
+  },
+  {
+    "objectID": "Audio Technica/index.html#check-out-the-falstad-file-of-the-hysteresis-solution",
+    "href": "Audio Technica/index.html#check-out-the-falstad-file-of-the-hysteresis-solution",
+    "title": "Audio Technica",
+    "section": "Check out the Falstad File of the Hysteresis Solution",
+    "text": "Check out the Falstad File of the Hysteresis Solution\n\nYour browser does not support iframes. Please visit the link directly: &lt;a href=\"https://tinyurl.com/28lrda8h\"&gt;Open Link&lt;/a&gt;"
+  },
+  {
+    "objectID": "Audio Technica/index.html#check-out-the-pcb-file",
+    "href": "Audio Technica/index.html#check-out-the-pcb-file",
+    "title": "Audio Technica",
+    "section": "Check out the PCB File",
+    "text": "Check out the PCB File\n\nView the PCB design: Download PCB File"
+  },
+  {
+    "objectID": "Audio Technica/index.html#final-report-usb-c-overheating-solution",
+    "href": "Audio Technica/index.html#final-report-usb-c-overheating-solution",
+    "title": "Audio Technica",
+    "section": "Final Report: USB-C Overheating Solution",
+    "text": "Final Report: USB-C Overheating Solution\n\nThis browser does not support PDFs. Please download the PDF to view it: &lt;a href=\"./AudioTechnicaReport.pdf\"&gt;Download PDF&lt;/a&gt;"
+  },
+  {
+    "objectID": "Audio Technica/index.html#final-presentation-usb-c-overheating-solution",
+    "href": "Audio Technica/index.html#final-presentation-usb-c-overheating-solution",
+    "title": "Audio Technica",
+    "section": "Final Presentation: USB-C Overheating Solution",
+    "text": "Final Presentation: USB-C Overheating Solution"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Nandini Garg’s Portfolio",
+    "section": "",
+    "text": "I am an aspiring Electrical Engineer, eager to learn and push boundaries."
+  },
+  {
+    "objectID": "index.html#about-me",
+    "href": "index.html#about-me",
+    "title": "Nandini Garg’s Portfolio",
+    "section": "",
+    "text": "I am an aspiring Electrical Engineer, eager to learn and push boundaries."
+  },
+  {
+    "objectID": "index.html#contact-me",
+    "href": "index.html#contact-me",
+    "title": "Nandini Garg’s Portfolio",
+    "section": "Contact Me",
+    "text": "Contact Me"
+  },
+  {
+    "objectID": "MIT Lincoln Labs/index.html",
+    "href": "MIT Lincoln Labs/index.html",
+    "title": "MIT Lincoln Labs",
+    "section": "",
+    "text": "Role: Electrical Engineer.\nTechnical Skills: SMA Cables, Root Cause Analysis, GNU Radio, ArduPilot, Anechoic Chamber, ADALM Pluto SDR, Linux/Ubuntu, Terminal, MUSIC Algorithm, Navigation Algorithms for Drones, Xilinx ZC706 FPGA, AnalogDevices fmcomms5, Electronics Stack Configuration, Spectrum Analyzer, Signal Generators, Power Amplifiers, Oscilloscopes.\nSoft Skills: Stakeholder Management, Teamwork, Communication, Technical Communication, Time Management, Technical Presentation, Conflict Resolution.\nCertifications: Commercial Drone Pilot FAA 107."
+  },
+  {
+    "objectID": "MIT Lincoln Labs/index.html#key-skills-acquiredhoned",
+    "href": "MIT Lincoln Labs/index.html#key-skills-acquiredhoned",
+    "title": "MIT Lincoln Labs",
+    "section": "",
+    "text": "Role: Electrical Engineer.\nTechnical Skills: SMA Cables, Root Cause Analysis, GNU Radio, ArduPilot, Anechoic Chamber, ADALM Pluto SDR, Linux/Ubuntu, Terminal, MUSIC Algorithm, Navigation Algorithms for Drones, Xilinx ZC706 FPGA, AnalogDevices fmcomms5, Electronics Stack Configuration, Spectrum Analyzer, Signal Generators, Power Amplifiers, Oscilloscopes.\nSoft Skills: Stakeholder Management, Teamwork, Communication, Technical Communication, Time Management, Technical Presentation, Conflict Resolution.\nCertifications: Commercial Drone Pilot FAA 107."
+  },
+  {
+    "objectID": "MIT Lincoln Labs/index.html#moments-from-the-project",
+    "href": "MIT Lincoln Labs/index.html#moments-from-the-project",
+    "title": "MIT Lincoln Labs",
+    "section": "Moments from the Project",
+    "text": "Moments from the Project\n\n\n\nImage 1: Fun Pictures from the Project"
+  },
+  {
+    "objectID": "MIT Lincoln Labs/index.html#mitll-final-report",
+    "href": "MIT Lincoln Labs/index.html#mitll-final-report",
+    "title": "MIT Lincoln Labs",
+    "section": "MITLL Final Report",
+    "text": "MITLL Final Report\n\nThis browser does not support PDFs. Please download the PDF to view it: &lt;a href=\"./MITLLFR.pdf\"&gt;Download PDF&lt;/a&gt;"
+  },
+  {
+    "objectID": "MIT Lincoln Labs/index.html#mitll-design-review-1",
+    "href": "MIT Lincoln Labs/index.html#mitll-design-review-1",
+    "title": "MIT Lincoln Labs",
+    "section": "MITLL Design Review 1",
+    "text": "MITLL Design Review 1"
+  },
+  {
+    "objectID": "MIT Lincoln Labs/index.html#mitll-design-review-2",
+    "href": "MIT Lincoln Labs/index.html#mitll-design-review-2",
+    "title": "MIT Lincoln Labs",
+    "section": "MITLL Design Review 2",
+    "text": "MITLL Design Review 2"
+  },
+  {
+    "objectID": "MIT Lincoln Labs/index.html#mitll-design-review-3",
+    "href": "MIT Lincoln Labs/index.html#mitll-design-review-3",
+    "title": "MIT Lincoln Labs",
+    "section": "MITLL Design Review 3",
+    "text": "MITLL Design Review 3"
+  },
+  {
+    "objectID": "MIT Lincoln Labs/index.html#mitll-colloqium-presentation",
+    "href": "MIT Lincoln Labs/index.html#mitll-colloqium-presentation",
+    "title": "MIT Lincoln Labs",
+    "section": "MITLL Colloqium Presentation",
+    "text": "MITLL Colloqium Presentation"
+  },
+  {
+    "objectID": "Machine Shop/index.html",
+    "href": "Machine Shop/index.html",
+    "title": "Machine Shop",
+    "section": "",
+    "text": "Role: Shop Proctor. Technical Skills: Machining Skills, Software Skills for the machines, Mechanical Technical Drawings.\nSoft Skills: Listening, Leadership, Communication, Technical Communication, Time Management, Stress Management, Conflict Resolution.\nCertifications: HMC Machine Shop User, HMC Machine Shop Proctor."
+  },
+  {
+    "objectID": "Machine Shop/index.html#key-skills-acquiredhoned",
+    "href": "Machine Shop/index.html#key-skills-acquiredhoned",
+    "title": "Machine Shop",
+    "section": "",
+    "text": "Role: Shop Proctor. Technical Skills: Machining Skills, Software Skills for the machines, Mechanical Technical Drawings.\nSoft Skills: Listening, Leadership, Communication, Technical Communication, Time Management, Stress Management, Conflict Resolution.\nCertifications: HMC Machine Shop User, HMC Machine Shop Proctor."
+  },
+  {
+    "objectID": "Machine Shop/index.html#machine-shop-proctor",
+    "href": "Machine Shop/index.html#machine-shop-proctor",
+    "title": "Machine Shop",
+    "section": "Machine Shop Proctor",
+    "text": "Machine Shop Proctor\nAs a machine shop proctor at the Harvey Mudd Machine Shop, I had the opportunity to teach over 100 students every semester how to safely operate machinery in the metal and wood shop. As a shop proctor, I have helped students in their journeys creating ocarinas and hammers in the shop in safe manner while fostering a welcoming environment."
+  },
+  {
+    "objectID": "Machine Shop/index.html#machines-im-skilled-at",
+    "href": "Machine Shop/index.html#machines-im-skilled-at",
+    "title": "Machine Shop",
+    "section": "Machines I’m Skilled At",
+    "text": "Machines I’m Skilled At\n\n\n\n\nMetal Shop\nWood Shop\n\n\n\n\n3D Printer\nRouter Table\n\n\nLathe\nTable Saw (Sawstop)\n\n\nOvens\nMiter (Chop) saw\n\n\nMill\nDrill Press\n\n\nSandblaster\nSpindle Sander\n\n\nHorizontal Bandsaw\nCNC ROUTER (SHOPBOT)\n\n\nSpot Welder\nVertical Bandsaw\n\n\nShear\nBelt Sander\n\n\nArbor Press\nPlaner\n\n\nBending Brake\nWood Lathe\n\n\nTool Grinder\nJointer\n\n\nPneumatic Grinder\nPanel Saw"
+  },
+  {
+    "objectID": "Machine Shop/index.html#fun-machine-shop-moments",
+    "href": "Machine Shop/index.html#fun-machine-shop-moments",
+    "title": "Machine Shop",
+    "section": "Fun Machine Shop Moments",
+    "text": "Fun Machine Shop Moments\n\n\n\nImage 1: Trying out a new polishing method\n\n\n\n\n\nImage 2: Getting trained on using preset programs for the mills"
+  }
+]
