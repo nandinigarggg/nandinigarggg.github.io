@@ -1,0 +1,70 @@
+/* css styles */
+.centered-content {
+    text-align: center;
+  }
+  
+  .centered-content ul {
+    list-style-type: none; /* Remove bullets */
+    padding: 0;
+    margin: 0;
+  }
+  
+  .centered-content li {
+    margin-bottom: 5px; /* Adjust spacing as needed */
+  }
+
+
+  /* Existing CSS styles */
+.centered-content {
+    text-align: center;
+}
+
+.centered-content ul {
+    list-style-type: none; /* Remove bullets */
+    padding: 0;
+    margin: 0;
+}
+
+.centered-content li {
+    margin-bottom: 5px; /* Adjust spacing as needed */
+}
+
+/* New header background color styles */
+h1 {
+    #background-color: hsl(351, 100%, 96%); /* Light cyan */
+    #padding: 10px;
+    #border-radius: 5px;
+}
+
+h2 {
+    background-color: #ffebee; /* Light green */
+    padding: 8px;
+    border-radius: 5px;
+}
+
+h3 {
+    background-color: #ffebee; /* Light pink */
+    padding: 6px;
+    border-radius: 5px;
+}
+
+h4, h5, h6 {
+    background-color: #ffebee; /* Light purple */
+    padding: 10px;
+    border-radius: 5px;
+
+}
+h7 {
+    background-color: #ffffff; /* Light purple */
+    padding: 10px;
+    border-radius: 5px;
+
+}
+
+
+.image-gallery img {
+    width: 45%;
+    margin: 10px;
+    border-radius: 8px; /* Rounds the corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow */
+}

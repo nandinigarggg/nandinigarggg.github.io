@@ -1,0 +1,61 @@
+--- 
+title: Education @ HMC 
+---
+## General Engineering at HMC
+
+<div class="centered-content" style="text-align: justify;">
+The General Engineering Program at Harvey Mudd College 
+stands out for its interdisciplinary approach, blending mechanical, 
+electrical, and systems engineering with a strong foundation in 
+liberal arts and sciences. Students gain technical expertise and 
+hands-on experience through project-based learning, cutting-edge labs, 
+and the renowned Clinic Program, where they solve real-world problems 
+with industry partners. Emphasizing ethical innovation and societal impact, 
+the program prepares well-rounded engineers equipped to tackle complex 
+challenges across industries. With its rigorous curriculum, collaborative 
+learning environment, and strong alumni network, HMC’s program produces 
+technically proficient, socially conscious leaders ready to excel in a dynamic world.
+<div>
+
+## Notable Work
+
+In some of my completed courses, I worked on some challenging, interesting, 
+and fun final projects. Information about each final project can be found below, 
+and the final report for each project is linked. 
+
+**Inverted Pendulum Control System**: A partner and I developed a 
+full-state feedback control system that stabilized an inverted pendulum 
+on a cart as it moved 1 meter in under 10 seconds.
+
+<p>More information can be found <a href="./E102_Inverted_Pendulum.pdf" target="_blank" style="text-decoration: underline; color: blue;">here</a>.</p>
+
+**Driveshaft Analysis of a Formula SAE RaceCar**: I conducted a material analysis of a driveshaft used on Formula 
+SAE vehicles. 
+
+<p>More information can be found <a href="./Engineering_Final.pdf" target="_blank" style="text-decoration: underline; color: blue;">here</a>.</p>
+
+**Underwater Submarine**: A team of 3 students and I developed a underwater submarine whose objective was 
+to determine the change in salinity of water at Dana Point due to climate change. 
+
+<p>More information about the presentation can be found <a href="./E80_Final_Pres.pdf" target="_blank" style="text-decoration: underline; color: blue;">here</a>.</p>
+<p>More information about the final report can be found <a href="./E80_Final_Report.pdf" target="_blank" style="text-decoration: underline; color: blue;">here</a>.</p>
+
+
+## Relevant Courses I've Taken
+
+Check out the course descriptions here: [Engineering Curriculum @ HMC](https://www.hmc.edu/engineering/curriculum/courses/#course-id-6727)
+
+<div style="text-align: center;">
+
+|Relevant Courses I've Taken| @ HMC| 
+|---|---|
+|Semiconductors|Radio Frequency Circuit Design|
+|System-on-Chip Design|Elec & Magnetic Circuits/Devices|
+|Digital Electronics and Computer Engineering|System-on-Chip Design|
+|Advanced Systems Engineering|Materials Engineering|
+|Engineering Systems|Management of Technical Enterprise|
+|Engineering Design and Invention|Introduction to Engineering Design and Manufacturing|
+|Differential Equations|Linear Algebra|
+|Mechanics and Wave Motion|Discrete Mathematics|
+
+</div>

@@ -1,0 +1,24 @@
+---
+title: "Audio Technica"
+---
+## Key Skills Acquired/Honed
+**Technical Skills**: Root Cause Analysis, Read Electrical Technical Drawings, Altium Designer, Design Cycle, Stress Testing, Edge Case Testing, Falstad Simulation, FLIR Infrared Camera, Morph Chart, Best of Class Chart, Functions, Objectives and Constraints, Spectrum Analyzer, Signal Generators, Power Amplifiers, Oscilloscopes.
+
+**Soft Skills**: Stakeholder Management, Teamwork, Communication, Technical Communication, Time Management, Technical Presentation.
+
+## Check out the Falstad File of the Hysteresis Solution 
+<iframe src="https://tinyurl.com/28lrda8h" width="100%" height="600px" style="border:none;">
+    Your browser does not support iframes. Please visit the link directly: <a href="https://tinyurl.com/28lrda8h">Open Link</a>
+</iframe>
+
+## Check out the PCB File
+<p>View the PCB design: <a href="path/to/E185.kicad.pcb" target="_blank">Download PCB File</a></p>
+
+
+## Final Report: USB-C Overheating Solution
+<iframe src="./AudioTechnicaReport.pdf" width="100%" height="800px" style="border:none;">
+    This browser does not support PDFs. Please download the PDF to view it: <a href="./AudioTechnicaReport.pdf">Download PDF</a>
+</iframe>
+
+## Final Presentation: USB-C Overheating Solution
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSw1yI-G1Fxv_7L3DHMc1L9rUJVPMxZMNnY6TfeD9KcuyrsA8YUdD1t1j4NkgQWynNYTNz3qlDPzfQC/embed?start=true&loop=true&delayms=3000" frameborder="0" width="100%" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>

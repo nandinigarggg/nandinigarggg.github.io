@@ -1,0 +1,80 @@
+--- 
+title: Amazon Prime Air
+---
+
+## Key Skills Acquired/Honed
+**Role**: Team Lead and Navigation Engineer. 
+
+**Technical Skills**: Root Cause Analysis, Familiarity with FAA Regulations, Understanding Global Regulations, Terminal, GPS, Linux/Ubuntu, UWB, mmWave, Computer Vision, Intel RealSense Cameras, PID Control, Camera Calibration, Matlab, ROS, SDK, Trade Study, Literature Review, Serial Monitor, Documentation Review. 
+
+**Soft Skills**: Stakeholder Management, Leadership, Teamwork, Communication, Technical Documentation, Technical Communication, Time Management, Technical Presentation, Conflict Resolution.
+
+## Tag Detection Code 
+```python 
+import apriltag
+import argparse
+import cv2
+
+# construct the argument parser and parse the arguments
+ap = argparse.ArgumentParser()
+ap.add_argument("-i", "--image", required=True,
+	help="path to input image containing AprilTag")
+args = vars(ap.parse_args())
+
+# load the input image and convert it to grayscale
+print("[INFO] loading image...")
+image = cv2.imread(args["image"])
+gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+
+# define the AprilTags detector options and then detect the AprilTags
+# in the input image
+print("[INFO] detecting AprilTags...")
+options = apriltag.DetectorOptions(families="tag16h5")
+detector = apriltag.Detector(options)
+results = detector.detect(gray)
+print("[INFO] {} total AprilTags detected".format(len(results)))
+
+
+# loop over the AprilTag detection results
+for r in results:
+	# extract the bounding box (x, y)-coordinates for the AprilTag
+	# and convert each of the (x, y)-coordinate pairs to integers
+	(ptA, ptB, ptC, ptD) = r.corners
+	ptB = (int(ptB[0]), int(ptB[1]))
+	ptC = (int(ptC[0]), int(ptC[1]))
+	ptD = (int(ptD[0]), int(ptD[1]))
+	ptA = (int(ptA[0]), int(ptA[1]))
+	# draw the bounding box of the AprilTag detection
+	cv2.line(image, ptA, ptB, (0, 255, 0), 2)
+	cv2.line(image, ptB, ptC, (0, 255, 0), 2)
+	cv2.line(image, ptC, ptD, (0, 255, 0), 2)
+	cv2.line(image, ptD, ptA, (0, 255, 0), 2)
+	# draw the center (x, y)-coordinates of the AprilTag
+	(cX, cY) = (int(r.center[0]), int(r.center[1]))
+	cv2.circle(image, (cX, cY), 5, (0, 0, 255), -1)
+	# draw the tag family on the image
+	tagFamily = r.tag_family.decode("utf-8")
+	cv2.putText(image, tagFamily, (ptA[0], ptA[1] - 15),
+		cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
+	print("[INFO] tag family: {}".format(tagFamily))
+# show the output image after AprilTag detection
+cv2.imshow("Image", image)
+cv2.waitKey(0)
+
+```
+<div style="text-align: center;">
+  <img src="/images/Tag_Detection.png" alt="Visa Image 1" style="display: block; margin: 0 auto; max-width: 80%;">
+</div>
+
+
+## Prime Air Design Review 1
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSjfew8vLoJ-Ht5994NHRK8nL9T7X4dFJSuK66fnXDm63Ke_LtmNDDELr6Lvd1PHWh-EspUi_3udJEn/embed?start=false&loop=false&delayms=3000" frameborder="0" width="100%" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+## Prime Air Design Review 2
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQI9Y6EeuDPaG5H_iDwK0ImzxriHS59A-wZnCW_asf2iPH9p0999el4wtWu57GOdw590UqsQplNWoWM/embed?start=false&loop=false&delayms=3000" frameborder="0" width="100%" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+## Prime Air Design Review 3 
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSEMRgSskQ7rqn7jgOaifpZ9p59rTNh007SdQbq_JopRsHrG_CH0pbFHx4NZtcs6eDssIPS_IpWuBLY/embed?start=false&loop=false&delayms=3000" frameborder="0" width="100%" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+## Metrics Selection Against Sensors 
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTd9HX7BFAoi4kKz-pVjdr-BWqzD0oTtb-CKB4tOY0KVgduLtpAWC522n0VmVly_TNDKKRz3Xfg3ZOZ/pubhtml?widget=true&amp;headers=false"frameborder="0" width="100%" height="850" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>

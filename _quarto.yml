@@ -1,0 +1,37 @@
+project:
+  type: website
+
+website:
+  title: "Nandini Garg's Portfolio"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: Resume/
+        text: Resume
+      - href: Academic Work/ 
+        text: Education @ HMC
+      - href: Amazon Prime Air/ 
+        text: Amazon Prime Air
+      - href: Doosan Bobcat/ 
+        text: Doosan Bobcat
+      - href: MIT Lincoln Labs/ 
+        text: MIT Lincoln Labs
+      - href: Audio Technica/
+        text: Audio Technica
+      - href: Machine Shop/ 
+        text: Machine Shop
+      - href: Visa/ 
+        text: Visa
+
+
+
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+
+

@@ -1,0 +1,23 @@
+--- 
+title: Doosan Bobcat
+---
+
+## Key Skills Acquired/Honed
+**Role**: Autonomous Systems Engineer. 
+
+**Technical Skills**: Matlab, C++, Root Cause Analysis, Python, PID Control, Dubins Algorithm, State Space Representations, Control Gain Tuning, Radars. 
+
+**Soft Skills**: Leadership, Teamwork, Communication, Technical Communication, Time Management, Technical Presentation, Understanding Consumer Needs, Consulting, Conflict Resolution.
+  
+
+## Final Poster
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSiX8Zhkmt4IMFrreFUwJwzObECtfCYrUEousmNbYWGccwZvRQ170GYs9sHzDOX1w/embed?start=false&loop=false&delayms=3000" frameborder="0" width="100%" height="1000" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+
+## Doosan Bobcat Final Report
+<iframe src="./BobcatFR.pdf" width="100%" height="1000px" style="border:none;">
+    This browser does not support PDFs. Please download the PDF to view it: <a href="./BobcatFR.pdf">Download PDF</a>
+</iframe>
+
+## Doosan Bobcat Final Presentation
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRrz5UJcQhvBzqpD2Hty_aNSo1BVQJ0JCPpQfe5bChP0vcnfrUD89Rz-94q3Jb_Pw/embed?start=false&loop=false&delayms=3000" frameborder="0" width="100%" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>

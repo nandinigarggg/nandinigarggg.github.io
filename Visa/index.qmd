@@ -1,0 +1,30 @@
+--- 
+title: Visa
+---
+## Key Skills Acquired/Honed
+**Role**: Technical Product Manager Intern. 
+
+**Technical Skills**: Agile, Scrum, Kubernetes, Python, Estimation, Large Budget Management, Large Scale Infrastructure Management. 
+
+**Soft Skills**: Stakeholder Management, Listening, Leadership, Communication, Technical Communication, Time Management, Stress Management, Conflict Resolution.
+
+To make the most of my internship at Visa, I knew that I had to be proactive. 
+I actively sought out resources in the form of my weekly 
+meetings with my manager, daily meetings with my buddy and lots of time spent on the intranet to 
+try and get up to speed as quickly as possible. 
+Once I was onboarded, I met with various different teams with my buddy and learnt a lot about the ins and out of large scale 
+infrastructure management. Soon, I was trusted to manage 133 servers and a budget of $700,000. In addition to this I was asked to
+pitch the product in front of a large scale department meeting 
+## Team Dinner
+
+<div style="text-align: center;">
+  <img src="/images/Visa1.jpg" alt="Visa Image 1" style="display: block; margin: 0 auto; max-width: 80%;">
+</div>
+
+<div style="text-align: center; margin-top: 20px;">
+  <img src="/images/Visa2.jpg" alt="Visa Image 2" style="display: block; margin: 0 auto; max-width: 80%;">
+</div>
+
+<div style="text-align: center; margin-top: 20px;">
+  <img src="/images/Visa3.jpg" alt="Visa Image 3" style="display: block; margin: 0 auto; max-width: 80%;">
+</div>

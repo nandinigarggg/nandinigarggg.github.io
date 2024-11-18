@@ -1,0 +1,38 @@
+--- 
+title: MIT Lincoln Labs
+---
+## Key Skills Acquired/Honed
+**Role**: Electrical Engineer. 
+
+**Technical Skills**: SMA Cables, Root Cause Analysis, GNU Radio, ArduPilot, Anechoic Chamber, ADALM Pluto SDR, Linux/Ubuntu, Terminal, MUSIC Algorithm, Navigation Algorithms for Drones, Xilinx ZC706 FPGA, AnalogDevices fmcomms5, Electronics Stack Configuration, Spectrum Analyzer, Signal Generators, Power Amplifiers, Oscilloscopes. 
+
+**Soft Skills**: Stakeholder Management, Teamwork, Communication, Technical Communication, Time Management, Technical Presentation, Conflict Resolution.
+
+**Certifications**: Commercial Drone Pilot FAA 107. 
+
+
+## Moments from the Project
+
+
+<div style="text-align: center;">
+  <img src="/images/MITLLP1.jpeg" alt="Fun Pictures from the Project" style="display: block; margin: 0 auto; max-width: 80%;">
+  <p style="text-align: center; font-style: italic;">Image 1: Fun Pictures from the Project</p>
+</div>
+
+## MITLL Final Report
+<iframe src="./MITLLFR.pdf" width="100%" height="800px" style="border:none;">
+    This browser does not support PDFs. Please download the PDF to view it: <a href="./MITLLFR.pdf">Download PDF</a>
+</iframe>
+
+## MITLL Design Review 1
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vT96JoKvZjN4meKl9fvlkRTKsIfMJh70zigvj74jvRwPFvI0KrHA88Ny3xwmShzUnW4d1KTh59V8lgw/embed?start=false&loop=false&delayms=60000" frameborder="0" width="100%" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+## MITLL Design Review 2
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vS4W8ufK7KWZ2uP_OsRCxErRcX-gQ3KN4CWAbXLH8eFu_UxinRJa2DOgw2JlJL7ld31tzuzu4MKoYfl/embed?start=false&loop=false&delayms=3000" frameborder="0" width="100%" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+## MITLL Design Review 3
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRcnBPh1iv9FPvkhlJUeY6aDO0fNIbZxCeG76AHO9r4P8UrSmf2teKgp7paUG09mqBdTXpC6K37qPQg/embed?start=false&loop=false&delayms=3000" frameborder="0" width="100%" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+## MITLL Colloqium Presentation 
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRk6jSTmi_SBdrH5NF4NWBB706XO3LuNUd-IMzmObwkVXhWN564zK8k4MUz8zWUxuDjnd9NWvxS5tSc/embed?start=false&loop=false&delayms=3000" frameborder="0" width="100%" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+

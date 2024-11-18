@@ -1,0 +1,51 @@
+--- 
+title: Machine Shop
+---
+## Key Skills Acquired/Honed
+**Role**: Shop Proctor. 
+**Technical Skills**: Machining Skills, Software Skills for the machines, Mechanical Technical Drawings. 
+
+**Soft Skills**: Listening, Leadership, Communication, Technical Communication, Time Management, Stress Management, Conflict Resolution.
+
+**Certifications**: HMC Machine Shop User, HMC Machine Shop Proctor. 
+
+
+## Machine Shop Proctor 
+As a machine shop proctor at the Harvey Mudd Machine Shop, I had the opportunity to teach over 
+100 students every semester how to safely operate machinery in the metal and wood shop. As a shop proctor,
+I have helped students in their journeys creating ocarinas and hammers in the shop in safe manner while 
+fostering a welcoming environment. 
+ 
+## Machines I'm Skilled At
+<div style="text-align: center;">
+| Metal Shop|Wood Shop|
+|---|---|
+|3D Printer|Router Table|
+|Lathe|Table Saw (Sawstop)|
+|Ovens|Miter (Chop) saw|
+|Mill|Drill Press|
+|Sandblaster|Spindle Sander|
+|Horizontal Bandsaw|CNC ROUTER (SHOPBOT)|
+|Spot Welder|Vertical Bandsaw|
+|Shear|Belt Sander|
+|Arbor Press|Planer|
+|Bending Brake|Wood Lathe|
+|Tool Grinder|Jointer|
+|Pneumatic Grinder|Panel Saw|
+
+
+</div>
+
+
+## Fun Machine Shop Moments
+
+<div style="text-align: center;">
+  <img src="/images/MachineShop1.jpeg" alt="Trying out a new polishing method" style="display: block; margin: 0 auto; max-width: 80%;">
+  <p style="text-align: center; font-style: italic;">Image 1: Trying out a new polishing method</p>
+</div>
+
+<div style="text-align: center; margin-top: 20px;">
+  <img src="/images/MachineShop2.jpeg" alt="Getting trained to on using preset programs for the mills" style="display: block; margin: 0 auto; max-width: 80%;">
+  <p style="text-align: center; font-style: italic;">Image 2: Getting trained on using preset programs for the mills</p>
+</div>
+
